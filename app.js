@@ -1,15 +1,5 @@
 //38a7954fa4704ec8afb25426230908
 
-// fetch('http://api.weatherapi.com/v1/current.json?key=38a7954fa4704ec8afb25426230908&q=Mexico',
-// {mode: 'cors'} )
-// .then(function(response){
-//     console.table(response.json())
-//     // return response.json()
-// })
-// .then(function(response){
-//     // test.textContent = response.temp_c;
-
-// })
 
 const container = document.querySelector('#container')
 const test = document.createElement('div')
@@ -24,7 +14,15 @@ async function getWeather(){
         test.textContent = response.current.temp_c
     })    
 }
-getWeather()
+// getWeather()
+const btn = document.querySelector('button')
+const imgFace = "url('./img/sayuFace.jpg')"
+
+btn.style.background = imgFace
+btn.style.backgroundSize = 'contain'
+btn.style.height = '200px'
+btn.style.width = '200px'
+
 
 
 

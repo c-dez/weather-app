@@ -1,0 +1,33 @@
+body{
+    height: 100vh;
+    margin: 0;
+
+}
+#container{
+height: 100%;    
+display: grid;
+/* background-color: pink; */
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 60% 1fr;
+grid-auto-rows: 1fr;
+
+
+}
+.header{
+    background-color: #3ff1f3;
+    grid-area: 1/1/2/3;
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+}
+button{
+    margin-top: 10%;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-sizing: content-box;
+}
+button:hover{
+    transform: scale(1.1);
+}
