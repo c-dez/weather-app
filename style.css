@@ -7,9 +7,9 @@ body{
 height: 100%;    
 display: grid;
 /* background-color: pink; */
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 60% 1fr;
-grid-auto-rows: 1fr;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: 70% 1fr;
+/* grid-auto-rows: 1fr; */
 
 
 }
@@ -19,15 +19,24 @@ grid-auto-rows: 1fr;
     display: grid;
     /* align-items: center; */
     justify-content: center;
+    grid-template-rows: 100px 1fr 1fr ;
+    grid-auto-rows: 1fr;
 }
 button{
-    margin-top: 10%;
+    grid-area: 2/1/3/2;
+    /* margin-top: 10%; */
     height: 350px;
     width: 350px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 5px solid white;
     box-sizing: content-box;
 }
 button:hover{
     transform: scale(1.1);
+}
+
+.lower{
+    background-color: #f3ea72;
+    /* display: grid; */
+
 }
